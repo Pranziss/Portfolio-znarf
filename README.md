@@ -1,4 +1,4 @@
-# Portfolio-znarf (https://pranziss.github.io/Portfolio-znarf/)
+# Portfolio-Pranziss/yubedaoneineed
 - (not yet optimized for smartphone)
 - 07-24-25 (will update next year)
 
