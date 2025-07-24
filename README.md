@@ -1,6 +1,7 @@
 # Portfolio-Pranziss/yubedaoneineed
 - (not yet optimized for smartphone)
 - 07-24-25 (will update next year)
+- 07-25-25 (mao nato jd wont touch it ever again i swear)
 
 ## ✉️ Contact
 
