@@ -1,0 +1,166 @@
+/*Background GIF */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/sakura.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*Layout Panels */
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 2em;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  min-width: 280px;
+}
+
+.left-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-panel li {
+  margin: 1em 0;
+}
+
+.left-panel a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left-panel a:hover {
+  color: #66ccff;
+}
+
+/* 👤 Profile Section */
+.right-panel {
+  text-align: center;
+}
+
+.right-panel img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1em;
+}
+
+/* 🖼️ Gallery Section */
+.middle-section {
+  text-align: center;
+  padding: 2em 4em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.gallery figure {
+  width: 400px;
+  margin: 1em;
+  text-align: center;
+  color: #fff;
+}
+
+.gallery img {
+  width: 400px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px rgba(255,255,255,0.6);
+}
+
+.gallery figcaption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.75em;
+  border-radius: 10px;
+  margin-top: 0.5em;
+}
+
+.gallery figcaption h3 {
+  margin: 0.2em 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #66ccff;
+}
+
+.gallery figcaption p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+/*Header + Nav */
+header {
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Gallery Sizing */
+@media (max-width: 768px) {
+  .gallery img {
+    width: 100%;
+  }
+
+  .middle-section {
+    padding: 1em;
+  }
+}
